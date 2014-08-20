@@ -35,6 +35,16 @@ function route_prepare_data(data, script_name_prefix, url_parts)
       data['donation_address'] = "PEiZ7r4KR85izAhfzQKJgJxdQkQ6PPXXEX";
       data['proofofstake'] = true;
       break;
+    case 'egd':
+      data['currency'] = 'E-Gold';
+      data['currency_short'] = 'EGD';
+      data['coin_factor'] = '100000000';
+      data['script_name'] = script_name_prefix + 'egd';
+      data['default_fees'] = 0.002;
+      data['address_version'] = 33;
+      data['donation_address'] = "EMQztWFcbkxgx8tHG6bw1Wy4UnQSBcfmdx";
+      data['proofofstake'] = true;
+      break;
     case 'btc':
       data['currency'] = 'Bitcoin';
       data['currency_short'] = 'BTC';
@@ -166,6 +176,8 @@ function route_search(currency, search_value, redirect_callback) {
         break;
       case 'D':
         redirect_callback('doge/address/' + search_value);
+      case 'E':
+        redirect_callback('egd/address/' + search_value);
         break;
       default:
         throw 'Invalid address type';

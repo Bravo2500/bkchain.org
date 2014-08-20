@@ -58,3 +58,7 @@ writeTemplate('wallet.html', 'wallet_ltc.html', defs, data);
 route_prepare_data(data, 'bkchain.html#/', ['doge']);
 writeTemplate('wallet.html', 'wallet_doge.html', defs, data);
 
+// E-GOLD
+route_prepare_data(data, 'bkchain.html#/', ['egd']);
+writeTemplate('wallet.html', 'wallet_egd.html', defs, data);
+

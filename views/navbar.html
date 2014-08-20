@@ -11,10 +11,7 @@
             <li class="dropdown" id="navbar_currency_dropdown">
               <a href="{{=it.script_name}}" class="dropdown-toggle" data-toggle="dropdown">{{=it.currency}} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li{{? '{{=it.currency_short}}' == 'BTC' }} class="active"{{?}}><a href="{{=it.script_name_base}}/btc">Bitcoin</a></li>
-                <li{{? '{{=it.currency_short}}' == 'LTC' }} class="active"{{?}}><a href="{{=it.script_name_base}}/ltc">Litecoin</a></li>
-                <li{{? '{{=it.currency_short}}' == 'PPC' }} class="active"{{?}}><a href="{{=it.script_name_base}}/ppc">Peercoin</a></li>
-                <li{{? '{{=it.currency_short}}' == 'DOGE' }} class="active"{{?}}><a href="{{=it.script_name_base}}/doge">Dogecoin</a></li>
+		<li{{? '{{=it.currency_short}}' == 'EGD' }} class="active"{{?}}><a href="{{=it.script_name_base}}/egd">E-Gold</a></li>
               </ul>
             </li>
 {{ if ({{# def.wallet }}) { }}
